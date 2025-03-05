@@ -194,3 +194,19 @@ def sum_of_even():
     print("sum is :",sum)
 
 # sum_of_even();
+
+
+def palindrom_check():
+    word = input("enter a word: ")
+    check = 0
+    j = len(word)
+    for i in word:
+        if i == word[j-1]:
+            j -= 1
+            check = 1
+        else:
+            check = 0
+            break
+    print("palindrom") if check == 1 else print("not palindrom")
+
+# palindrom_check()
